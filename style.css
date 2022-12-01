@@ -25,7 +25,7 @@
 body {
   display: flex;
   flex-wrap: wrap;
-  
+
 }
 
 .bodyindex {
@@ -46,6 +46,9 @@ body {
   /* pour anciens Chrome et Safari */
   background-size: cover;
   /* version standardisée */
+
+  margin: 0 0 10rem;
+
 }
 
 .bodylabo {
@@ -58,6 +61,17 @@ body {
   /* version standardisée */
 }
 
+.bodytec {
+  margin: 0;
+  padding: 0;
+  background: url(./image/img5.jpg) no-repeat center fixed;
+  -webkit-background-size: cover;
+  /* pour anciens Chrome et Safari */
+  background-size: cover;
+  /* version standardisée */
+}
+
+
 .bodyloc {
   margin: 0;
   padding: 0;
@@ -67,10 +81,19 @@ body {
   background-size: cover;
   /* version standardisée */
   align-items: center;
-    justify-content: center;
+  justify-content: center;
 }
 
+.bodyreco {
+  margin: 0;
+  padding: 0;
+  background: url(./image/premiersmall.jpg) no-repeat center fixed;
+  -webkit-background-size: cover;
+  /* pour anciens Chrome et Safari */
+  background-size: cover;
+  /* version standardisée */
 
+}
 
 
 header {
@@ -206,7 +229,7 @@ a {
 }
 
 a:link {
-  color: red;
+  color: white;
 }
 
 a:visited {
@@ -824,7 +847,7 @@ span {
 .social ul {
 
   list-style: none;
-  
+
 }
 
 .social ul li {
@@ -948,7 +971,7 @@ span {
 
 
 .social ul li a i {
-  animation: color-change 10s infinite;  
+  animation: color-change 10s infinite;
   font-size: 23px;
   font-weight: 900;
   position: absolute;
@@ -963,12 +986,29 @@ span {
 
 
 @keyframes color-change {
-  0% { color: red; }
-  20% { color: #f6ff00; }
-  40% { color: rgb(26, 255, 0); }
-  60% { color: rgb(0, 234, 255); }
-  80% { color: rgb(0, 4, 255); }
-  100% { color: rgb(255, 0, 242); }
+  0% {
+    color: red;
+  }
+
+  20% {
+    color: #f6ff00;
+  }
+
+  40% {
+    color: rgb(26, 255, 0);
+  }
+
+  60% {
+    color: rgb(0, 234, 255);
+  }
+
+  80% {
+    color: rgb(0, 4, 255);
+  }
+
+  100% {
+    color: rgb(255, 0, 242);
+  }
 }
 
 
@@ -1030,11 +1070,11 @@ footer {
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap');
 
 .containerfooter {
-  justify-content: center;
   width: 600px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .containerfooter .btn {
